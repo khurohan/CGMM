@@ -26,8 +26,6 @@ void main()
   printf("\n\n\nDrawing a line :-");
   line(30,280,220,380); //Drawing a line
  
-  outtext(300,140); //Placing cursor
- 
   printf("Drawing a line usng 'lineto' :-");
   moveto(500,85); //Moving to the location
   lineto(300,180); //Drawing a line fron cursor location to (350,180)
