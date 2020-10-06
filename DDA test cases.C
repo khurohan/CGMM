@@ -44,14 +44,20 @@ void main()
 
   //Block(1,1):-
   delay(1000);
-  outtextxy(38,30,"-: CGMT :-");
+  outtextxy(38,20,"-: CGMT :-");
   delay(1000);
-  outtextxy(10,70,"# Program - 4 :-");
+  outtextxy(10,50,"# Program - 4 :-");
   delay(1000);
-  outtextxy(10,100,"Aim : To execute");
-  outtextxy(60,115,"DDA line");
-  outtextxy(60,130,"drawing");
-  outtextxy(60,145,"algorithm.");
+  outtextxy(10,80,"Aim : To execute");
+  outtextxy(60,95,"DDA line");
+  outtextxy(60,110,"drawing");
+  outtextxy(60,125,"algorithm.");
+  delay(1000);
+  outtextxy(50,155,"Ashish Singla");
+  outtextxy(65,165,"00520902719");
+  delay(1000);
+  outtextxy(12,200,"Lines drawn using");
+  outtextxy(12,215,"DDA Algorithm --->");
 
   //Block(1,2):-
   delay(1000);
