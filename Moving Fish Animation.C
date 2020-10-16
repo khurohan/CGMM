@@ -6,7 +6,13 @@
 void main()
 { int gd=DETECT,gm,i=0;
   initgraph(&gd,&gm,"C:\\TURBOC3\\BGI");
-
+  
+  line(0,0,getmaxx(),0);
+  line(0,0,0,getmaxy());
+  line(getmaxx(),0,getmaxx(),getmaxy());
+  line(0,440,getmaxx(),440);
+  line(0,60,getmaxx(),60);
+ 
   for(i=0;i<100;i=i+2)
   { if(i==98)
     { setlinestyle(0,0,3);
@@ -15,11 +21,11 @@ void main()
       setcolor(0);
     }
     //frame
-    line(1,1,getmaxx(),1);
-    line(1,1,1,getmaxy());
-    line(getmaxx(),1,getmaxx(),getmaxy());
-    line(1,440,getmaxx(),440);
-    line(1,60,getmaxx(),60);
+    line(0,0,getmaxx(),0);
+    line(0,0,0,getmaxy());
+    line(getmaxx(),0,getmaxx(),getmaxy());
+    line(0,440,getmaxx(),440);
+    line(0,60,getmaxx(),60);
 
     //aquarium
     //stones
@@ -63,43 +69,43 @@ void main()
     line(1,440,getmaxx(),440);
 
     //fish
-    line(400-i,230+i/3,455-i,245+i/3);
-    line(350-i,280+i/3,400-i,230+i/3);
-    line(380-i,250+i/3,435-i,255+i/3);
-    line(455-i,245+i/3,465-i,265+i/3);
-    line(435-i,255+i/3,500-i,275+i/3);
-    line(350-i,280+i/3,355-i,295+i/3);
-    line(355-i,295+i/3,365-i,295+i/3);
-    line(355-i,295+i/3,365-i,305+i/3);
-    line(365-i,305+i/3,430-i,308+i/3);
-    line(430-i,308+i/3,500-i,275+i/3);
-    line(430-i,308+i/3,455-i,315+i/3);
-    line(455-i,315+i/3,475-i,303+i/3);
-    line(475-i,303+i/3,470-i,286+i/3);
-    line(395-i,305+i/3,403-i,320+i/3);
-    line(403-i,320+i/3,415-i,328+i/3);
-    line(415-i,328+i/3,420-i,320+i/3);
-    line(420-i,320+i/3,415-i,308+i/3);
-    line(470-i,266+i/3,535-i,250+i/3);
-    line(535-i,250+i/3,515-i,276+i/3);
-    line(515-i,276+i/3,525-i,305+i/3);
-    line(525-i,305+i/3,485-i,282+i/3);
-    line(380-i,250+i/3,400-i,272+i/3);
-    line(400-i,272+i/3,375-i,306+i/3);
-    line(400-i,272+i/3,415-i,270+i/3);
-    line(415-i,270+i/3,430-i,278+i/3);
-    line(430-i,278+i/3,420-i,294+i/3);
-    line(420-i,294+i/3,385-i,292+i/3);
-    circle(375-i,270+i/3,5);
+    line(350-i,230+i/3,405-i,245+i/3);
+    line(300-i,280+i/3,350-i,230+i/3);
+    line(330-i,250+i/3,485-i,255+i/3);
+    line(405-i,245+i/3,415-i,265+i/3);
+    line(385-i,255+i/3,450-i,275+i/3);
+    line(300-i,280+i/3,305-i,295+i/3);
+    line(305-i,295+i/3,315-i,295+i/3);
+    line(305-i,295+i/3,315-i,305+i/3);
+    line(315-i,305+i/3,380-i,308+i/3);
+    line(380-i,308+i/3,450-i,275+i/3);
+    line(380-i,308+i/3,405-i,315+i/3);
+    line(405-i,315+i/3,425-i,303+i/3);
+    line(425-i,303+i/3,420-i,286+i/3);
+    line(345-i,305+i/3,353-i,320+i/3);
+    line(353-i,320+i/3,365-i,328+i/3);
+    line(365-i,328+i/3,370-i,320+i/3);
+    line(370-i,320+i/3,365-i,308+i/3);
+    line(420-i,266+i/3,485-i,250+i/3);
+    line(485-i,250+i/3,465-i,276+i/3);
+    line(465-i,276+i/3,475-i,305+i/3);
+    line(475-i,305+i/3,435-i,282+i/3);
+    line(320-i,250+i/3,350-i,272+i/3);
+    line(350-i,272+i/3,325-i,306+i/3);
+    line(350-i,272+i/3,365-i,270+i/3);
+    line(365-i,270+i/3,380-i,278+i/3);
+    line(380-i,278+i/3,370-i,294+i/3);
+    line(370-i,294+i/3,335-i,292+i/3);
+    circle(325-i,270+i/3,5);
 
-    circle(330,280-i,5);
+    circle(280,280-i,5);
 
     if(i>30)
-    { circle(300,310-i,5); }
+    { circle(250,310-i,5); }
     if(i>60)
-    { circle(270,340-i,5); }
+    { circle(220,340-i,5); }
     if(i>80)
-    { circle(240,380-i,5); }
+    { circle(190,380-i,5); }
 
     delay(75);
 
